@@ -1,5 +1,7 @@
 # README
 
+This might be developed later, project has just been initialized though. Take care reader!
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
