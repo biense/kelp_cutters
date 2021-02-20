@@ -2,4 +2,7 @@
 
 <p><%= @article.body %></p>
 
-<a href="/articles/">All articles</a>
+<ul>
+    <li><%= link_to "Edit", edit_article_path(@article) %></li>
+    <li><a href="/articles/">All articles</a></li>
+</ul>
