@@ -24,3 +24,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Bootstrap added
+    run in console
+    --> yarn add bootstrap@4.3.1 jquery popper.js
