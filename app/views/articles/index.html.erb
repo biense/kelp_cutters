@@ -1,10 +1,18 @@
-<h1>Kelp Cutters latest posts</h1>
-<%= link_to "Create New Article", new_article_path %>
+<div class="jumbotron text-center">
+    <h1>Kelp Cutters latest posts</h1>
+</div>
+<div class="col-lg-6">
+    <%= link_to "Create New Article", new_article_path %>
+</div>
 
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-            <%= link_to article.title, article %>
-    </li>
-  <% end %>
-</ul>
+<div class="container">
+    <% @articles.each do |article| %>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>
+                    <%= link_to article.title, article, :class => "btn btn-primary btn-sm" %>
+                </p>
+            </div>
+        </div>
+    <% end %>
+</div>

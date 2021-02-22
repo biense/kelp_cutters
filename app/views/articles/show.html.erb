@@ -1,9 +1,15 @@
-<h1><%= @article.title %></h1>
+<div class="jumbotron text-center">
+    <h1><%= @article.title %></h1>
+</div>
 
 <p><%= @article.body %></p>
 
-<ul>
-    <li><a href="/articles/">All articles</a></li>
-    <li><%= link_to "Edit", edit_article_path(@article) %></li>
-    <li><%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %></li>
-</ul>
+<div class="btn-group" role="group" aria-label="CRUD">
+    <button type="button" class="btn btn-secondary">
+        <%= link_to "Edit", edit_article_path(@article), :class => "btn btn-primary btn-sm" %>
+    </button>
+    <button type="button" class="btn btn-secondary">
+        <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" }, :class => "btn btn-primary btn-sm" %>
+    </button>
+</div>
+
