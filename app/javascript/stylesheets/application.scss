@@ -1,0 +1,67 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$white: white;
+$black: black;
+$green: #50b13f;
+
+.navbar {
+        margin-bottom: 0;
+        background: $white;
+        .container {
+            color: green;
+        }
+}
+body {
+        background: $white;
+        color: $green;
+        font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2 {
+        font-weight: bold;
+}
+p {
+        font-size: 16px;
+        color: $white;
+}
+a:visited {
+        color: $black;
+}
+.jumbotron {
+        background: $green;
+        color: $white;
+        text-align: center;
+        p {
+                color: $white;
+                font-size: 26px;
+        }
+}
+.link {
+        color: $white;
+}
+.btn-primary {
+        background-color: white;
+        color: $green;
+        border-color: $green;
+        margin-bottom: 5px;
+}
+.btn-sm {
+        background-color: $white;
+        display: inline-block;
+        color: $green;
+        border-color: $green;
+        margin-bottom: 5px;
+}
+img,
+video,
+audio {
+        margin-top: 20px;
+        max-width: 80%;
+}
+caption {
+
+        float: left;
+        clear: both;
+
+}
