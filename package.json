@@ -8,8 +8,13 @@
     "@rails/webpacker": "5.2.1",
     "bootstrap": "4.3.1",
     "jquery": "^3.5.1",
+    "node-sass": "^5.0.0",
     "popper.js": "^1.16.1",
     "turbolinks": "^5.2.0"
+  },
+  "scripts": {
+    "css": "node-sass app/javascript/stylesheets/application.scss -o app/assets/stylesheets",
+    "css:watch": "npm run css && node-sass app/javascript/stylesheets/application.scss -wo app/assets/stylesheets"
   },
   "version": "0.1.0",
   "devDependencies": {
