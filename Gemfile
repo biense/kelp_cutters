@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.7'
 # Pagination with bootstrap
 gem 'will_paginate', '~> 3.1.1'
 gem 'will_paginate-bootstrap'
+# authentication
+gem 'devise'
 
 # Search function for full text
 gem 'textacular', '~> 5.0'

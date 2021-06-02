@@ -1,9 +1,12 @@
 <div class="jumbotron text-center">
     <h1>Kelp Cutters latest posts</h1>
 </div>
-<div class="col-lg-6">
-    <%= link_to "Create New Article", new_article_path %>
-</div>
+
+<% if user_signed_in? %>
+    <div class="col-lg-6">
+        <%= link_to "Create New Article", new_article_path %>
+    </div>
+<% end %>
 
 <div class="container">
     <% @articles.each do |article| %>

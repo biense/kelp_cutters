@@ -4,12 +4,13 @@
 
 <p><%= @article.body %></p>
 
-<div class="btn-group" role="group" aria-label="CRUD">
-    <button type="button" class="btn btn-secondary">
-        <%= link_to "Edit", edit_article_path(@article), :class => "btn btn-primary btn-sm" %>
-    </button>
-    <button type="button" class="btn btn-secondary">
-        <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" }, :class => "btn btn-primary btn-sm" %>
-    </button>
-</div>
-
+<% if user_signed_in? %>
+    <div class="btn-group" role="group" aria-label="CRUD">
+        <button type="button" class="btn btn-secondary">
+            <%= link_to "Edit", edit_article_path(@article), :class => "btn btn-primary btn-sm" %>
+        </button>
+        <button type="button" class="btn btn-secondary">
+            <%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" }, :class => "btn btn-primary btn-sm" %>
+        </button>
+    </div>
+<% end %>

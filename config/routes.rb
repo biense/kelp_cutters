@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # routes articles/index as the main page or "root"
   root "articles#index"
   

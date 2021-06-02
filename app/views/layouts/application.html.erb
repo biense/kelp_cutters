@@ -16,6 +16,13 @@
       <%= render 'layouts/navigation' %>
     </header>
 
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
     <main role="main">
       <%= content_for?(:content) ? yield(:content) : yield %>
     </main>
