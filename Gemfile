@@ -6,7 +6,10 @@ ruby '2.6.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.2', '>= 6.1.2.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# sqlite3 is the old database
+# gem 'sqlite3', '~> 1.4'
+# new database using PostgreSQL
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -24,6 +27,9 @@ gem 'jbuilder', '~> 2.7'
 # Pagination with bootstrap
 gem 'will_paginate', '~> 3.1.1'
 gem 'will_paginate-bootstrap'
+
+# Search function for full text
+gem 'textacular', '~> 5.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
