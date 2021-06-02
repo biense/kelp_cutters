@@ -1,6 +1,11 @@
 class ArticlesController < ApplicationController
+
   def index
-    @articles = Article.order("id DESC").all.paginate(page: params[:page], per_page: 10)
+    if params[:query] && params[:query]!=""
+      @articles = Article.basic_search(params[:query]).paginate(page: params[:page], per_page: 2)
+    else
+      @articles = Article.order("id DESC").all.paginate(page: params[:page], per_page: 10)
+    end
   end
 
   def show
